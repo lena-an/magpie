@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Menlo';
+    src: url('../fonts/Menlo.ttc'); /* IE9 Compat Modes */
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: "Menlo", sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+
+.nav__container, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo > a > img {
+    max-width: 400px;
+}
+
+.nav__links {
+    margin-right: 3.5rem;
+}
+
+.nav__links > a {
+    color: black;
+    font-size: 18px;
+    margin-right: 1.75rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__links > a:hover {
+    color: #8AB8EE;
+}
+
+/* MAIN CONTENT */
+.main__content {
+    position: relative;
+}
+
+.main__content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('../img/Background-short.png');
+    background-size: contain;
+    background-repeat: repeat;
+    opacity: .05;
+    content: "";
+    z-index: -1;
+}
+
+.video__container, .video__container > video {
+    max-width: 100%;
+}
+
+.video__container {
+    /* margin-top: -1rem; */
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #BED8F5;
+    height: 120px;
+    padding: 0 3rem;
+}
+
+.footer__icon {
+    max-width: 50px;
+    margin-right: 1.5rem;
+}
+
+/* DESIGN */
+
+.image__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 8%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 699px) {
+    .image__grid > a > img {
+        max-width: 400px;
+        margin: 0 auto 2rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .image__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+img  {
+    max-width: 100%;
+}
+
+/* PROJECT PAGES */
+
+.project__container {
+    padding: 4rem 8rem;
+}
+
+.project__row {
+    margin-top: 4rem;
+}
+
+.project__row--flex {
+    display: flex;
+}
+
+.project__row--flex > img {
+    max-width: 50%;
+    margin-right: 3.5rem;
+}
+
+.image__row {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+}
+
+.project__row > p {
+    line-height: 1.4;
+}
+
+
+.row__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30%;
+}
+
+.row__text > p {
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.row__text > h1 {
+    line-height: 45px;
+}
+
+.new--line {
+    display: block;
+}
+
+.right--container {
+    margin-left: 60%;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
