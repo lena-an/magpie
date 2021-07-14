@@ -18,16 +18,28 @@
 }
 
 .nav__logo > a > img {
-    max-width: 400px;
+    max-width: 280px;
 }
 
 .nav__links {
     margin-right: 3.5rem;
+    display: flex;
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .img-top {
+    display: inline;
 }
 
 .nav__links > a {
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     margin-right: 1.75rem;
     font-weight: bold;
     text-decoration: none;
@@ -129,6 +141,12 @@ img  {
     margin: 0 auto;
     margin-top: 4rem;
 
+}
+
+.video__row {
+    margin-top: 4rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .project__row > p {
