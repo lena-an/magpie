@@ -224,3 +224,48 @@ h4 {
     display: flex;
     justify-content: center;
 }
+
+/* Illustration / Photography */
+
+
+.marquee {
+    position: absolute;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 14s linear;
+    font-family: "Menlo", sans-serif;
+    font-weight: 200;
+    color:#458C78;
+    animation-iteration-count: 2;
+    font-size: 16px;
+    
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}
+
+/* ABOUT */
+
+.content--about {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content--text {
+    margin-top: 8rem;
+    margin-left: 1rem;
+}
+
+.content--text p {
+    margin-bottom: 1.5rem;
+}
+
+.video--about {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
