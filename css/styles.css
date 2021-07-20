@@ -162,7 +162,7 @@ img  {
 }
 
 .project__row > p {
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 
@@ -175,7 +175,7 @@ img  {
 
 .row__text > p {
     margin-bottom: 1rem;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .row__text > h1 {
